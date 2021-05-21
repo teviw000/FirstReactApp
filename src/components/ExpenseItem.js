@@ -1,5 +1,7 @@
 import "./ExpenseItem.css";
 
+// props is the object call of ExpenseItem in App.js
+// We call the Object and their attibutes as one parameter
 function ExpenseItem(props) {
   return (
     <div className="expense-item">

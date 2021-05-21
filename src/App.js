@@ -31,11 +31,12 @@ function App() {
   return (
     <div>
       <h2>Let's get started!</h2>
-      {/* 1. key value pair of [] 
+      {/* 1. key value pair in array
           2. Adding attributes to element of Expense Item
           3. Dynamically retrieve {}, assigning values to attributes
           4. What we name here in attribute names has to MATCH in what you call in ExpenseItem.js
-      
+          5. expenses[0].title is the call of index 1 of array, title attribute
+          6. title =, amount=, and date= can be named anything but makes sure props.[insert_here] matches
       */}
       <ExpenseItem
         title={expenses[0].title}
