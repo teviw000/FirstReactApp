@@ -1,11 +1,12 @@
+import React from 'react';
 import ExpenseDate from './ExpenseDate';
-import Card from './Card';
+import Card from '../UI/Card';
 import "./ExpenseItem.css";
 
 
 // props is the object call of ExpenseItem in App.js
 // We call the Object and their attibutes as one parameter
-function ExpenseItem(props) {
+const ExpenseItem = (props) => {
   // better to instantiate it it vs <div>{props.date.toLocaleString("en-US", {month: "long"})}</div>
 
 

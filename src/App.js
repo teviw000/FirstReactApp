@@ -1,4 +1,5 @@
-import Expenses from './components/Expenses';
+import React from 'react';
+import Expenses from './components/Expenses/Expenses';
 
 function App() {
   // array of objects (JS object) that will house elements for ExpenseItem.js
