@@ -8,7 +8,9 @@ import "./ExpenseItem.css";
 // We call the Object and their attibutes as one parameter
 const ExpenseItem = (props) => {
   // better to instantiate it it vs <div>{props.date.toLocaleString("en-US", {month: "long"})}</div>
-
+  const clickHandler = () => {
+    console.log('Clicked!!!!!!!');
+  };
 
   return (
     <Card className="expense-item">
@@ -18,6 +20,7 @@ const ExpenseItem = (props) => {
         <h2>{props.title}</h2>
         <div className="expense-item__price">${props.amount}</div>
       </div>
+      <button onClick={clickHandler}>Change Title</button>
     </Card>
   );
 }
