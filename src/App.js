@@ -1,7 +1,9 @@
 import React from 'react';
+
+import NewExpense from './components/NewExpense/NewExpense'
 import Expenses from './components/Expenses/Expenses';
 
-function App() {
+const App = () => {
   // array of objects (JS object) that will house elements for ExpenseItem.js
   const expenses = [
     {
@@ -31,7 +33,7 @@ function App() {
   ];
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewExpense />
       {/* 1. key value pair in array
           2. Adding attributes to element of Expense Item
           3. Dynamically retrieve {}, assigning values to attributes
