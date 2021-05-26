@@ -31,9 +31,14 @@ const App = () => {
       date: new Date(2021, 5, 12),
     },
   ];
+
+  const addExpenseHandler = (expense) => {
+    console.log(expense);
+  };
+
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       {/* 1. key value pair in array
           2. Adding attributes to element of Expense Item
           3. Dynamically retrieve {}, assigning values to attributes
